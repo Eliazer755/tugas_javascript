@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Eliazer Rizky<br><br>215314066</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="bantuan.html">About</a>
+        <a href="help.html">Form</a>
+        <a href="#" style="float:right">Link</a>
+    </div>
+
+    <div class="row">      
+        <script>
+
+            var tanggallengkap = new String();
+            var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+            namahari = namahari.split(" ");
+            var namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+            namabulan = namabulan.split(" ");
+            var tgl = new Date();
+            var hari = tgl.getDay();
+            var tanggal = tgl.getDate();
+            var bulan = tgl.getMonth();
+            var tahun = tgl.getFullYear();
+            tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+
+
+            // 1 detik = 1000
+            window.setTimeout("waktu()", 1000);
+            function waktu() {
+                var tanggal = new Date();
+                setTimeout("waktu()", 1000);
+                document.getElementById("jam").innerHTML = tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds();
+            }
+
+        </script>
+
+        <div class="waktu">
+            <script language='JavaScript'>document.write(tanggallengkap);</script>
+            <div id='jam'></div>
+        </div>
+
+
+
+
+        <div class="card">
+            <div class="nama">
+                <label for="Nama">Nama : </label>
+                <input type="text" id="Nama" />
+            </div>
+
+            <div class="jumlah">
+                <label for="banyakPil">Jumlah Pilihan : </label>
+                <input type="number" id="banyakPil" />
+            </div>
+
+            <button onclick="tampilPil()">OK</button>
+            <div id="pilihan1"></div>
+            <div id="button1"></div>
+            <form>
+                <div id="list"></div>
+                <div id="submit1"></div>
+            </form>
+    
+            <p id="result"></p>
+            <script src="form.js"></script>
+
+
+        </div>              
+
+    </div>
+
+
+</body>
+
+</html>

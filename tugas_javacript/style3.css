@@ -1,0 +1,95 @@
+
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 110px;
+    text-align: center;
+    background-image: url(game.img.jpg);
+    background-position: 0 -500px;
+    background-size: cover;
+  }
+
+  .waktu{
+    background-color: salmon;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+ .header p{
+   color: white;   
+   font: 30px/28px arial, sans-serif;
+  }
+
+  .header h1{
+    font: 20px/28px 'sans-serif', arial;
+    text-align: right;
+    color: lightseagreen;
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: lightskyblue;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: salmon;
+  }
+  
+  
+.row{
+    text-align: center;
+    padding-top: 50px;
+    width: 800px;   
+    margin: auto;    
+ }
+
+ .row .card{
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-top: 5px solid lightskyblue;
+        border-bottom: 5px solid salmon  ;
+}
+
+ .nama{
+    padding-bottom: 20px;
+ }
+ .jumlah{
+    padding-bottom: 20px;
+ }
+
+ #demo{
+  padding-top: 20px;
+ }
+
+ #demo2{
+  padding-top: 10px;
+ }
+
+ #tombol{
+  padding-top: 10px;
+ }
+ 

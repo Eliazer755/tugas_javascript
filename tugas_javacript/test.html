@@ -1,0 +1,44 @@
+<p>
+  Select a radio button and click on Submit.
+</p>
+
+Gender:
+
+<br>
+
+<button type="button" onclick="kirim2()">
+  Submit
+</button>
+
+<div id="demo2"></div>
+<div id="tombo2"></div>
+<button type="button" onclick="displayRadioValue()">
+  Submit
+</button>
+
+<br>
+
+<div id="result"></div>
+
+
+
+<script>
+
+  function kirim2() {
+    for (var i = 0; i < 5; i++) {
+      var x = document.createElement("INPUT");
+      x.setAttribute("type", "radio");
+      document.getElementById("demo2").appendChild(x);
+    }
+  }
+
+  function displayRadioValue() {
+    var ele = document.getElementsByName("menuradio");
+
+    for (i = 0; i < ele.length; i++) {
+      if (ele[i].checked)
+        document.getElementById("result").innerHTML
+          = "Gender: " + ele[i].value;
+    }
+  }
+</script>
